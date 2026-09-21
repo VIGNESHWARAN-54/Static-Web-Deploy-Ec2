@@ -1,5 +1,5 @@
 pipeline{
-    agent  any
+    agent{label 'aws-ec2'}
     environment{
         DOCKER_IMAGE_NAME='static-web-ec2:latest'
         DOCKER_CONTAINER_NMAE='static-web'
